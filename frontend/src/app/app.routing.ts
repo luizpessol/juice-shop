@@ -42,7 +42,7 @@ import { PhotoWallComponent } from './photo-wall/photo-wall.component'
 import { DeluxeUserComponent } from './deluxe-user/deluxe-user.component'
 import { AccountingGuard, AdminGuard, LoginGuard } from './app.guard'
 import { NFTUnlockComponent } from './nft-unlock/nft-unlock.component'
-import { ScoreBoardTwoComponent } from './score-board-two/score-board-two.component'
+import { ScoreBoardPreviewComponent } from './score-board-preview/score-board-preview.component'
 
 // vuln-code-snippet start adminSectionChallenge scoreBoardChallenge
 const routes: Routes = [
@@ -162,8 +162,8 @@ const routes: Routes = [
     component: ScoreBoardComponent // vuln-code-snippet neutral-line scoreBoardChallenge
   }, // vuln-code-snippet neutral-line scoreBoardChallenge
   {
-    path: 'score-board-two',
-    component: ScoreBoardTwoComponent
+    path: 'score-board-preview',
+    component: ScoreBoardPreviewComponent
   },
   {
     path: 'track-result',
